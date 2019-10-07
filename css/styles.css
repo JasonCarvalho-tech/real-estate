@@ -473,4 +473,8 @@ header ul.is-sticky li a.active {
     top: 50px;
     margin: -35px;
 }
+
+#testimonials-slider .slick-next{
+    right: 0;
+}
 /* end: testimonials styles*/
