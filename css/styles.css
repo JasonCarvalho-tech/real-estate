@@ -359,3 +359,22 @@ header ul.is-sticky li a.active {
 }
 /*end agents style*/
 
+/*start: the best real estate company styles*/
+#the-best{
+    margin: 2rem 0;
+}
+
+#the-best .flex > img {
+    width: 47%;
+}
+
+#the-best .flex > div{
+    padding-left: 20px;
+    margin-bottom: 4rem;
+}
+
+#the-best ul li{
+    margin: 10px 0;
+}
+/*end: best real estate company style*/
+
