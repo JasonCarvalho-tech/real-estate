@@ -233,29 +233,29 @@ header ul.is-sticky li a.active {
 }
 /* end: how it works styles */
 
-/* start properties styles*/
-#section{
+/* start: properties styles */
+#properties {
     margin: 4rem 0 8rem;
     position: relative;
 }
 
-#properties h2{
-    margin: 3rem;
+#properties h2 {
+    margin-bottom: 3rem;
 }
 
-#properties .container{
+#properties .container {
     position: relative;
 }
 
-#properties .container:before{
+#properties .container:before {
     content: "/";
     position: absolute;
     right: 80px;
-    top :18px;
+    top: 18px;
     color: #999;
 }
 
-#properties-slider a.slick-arrow{
+#properties-slider a.slick-arrow {
     color: #000;
     position: absolute;
     top: -78px;
@@ -265,50 +265,50 @@ header ul.is-sticky li a.active {
     text-decoration: none;
 }
 
-#properties-slider a.slick-prev{
+#properties-slider a.slick-prev {
     right: 80px;
 }
 
-#properties-slider.slick-slide{
-    padding: 015px;
+#properties-slider .slick-slide {
+    padding: 0 15px;
 }
 
-#properties-slider img{
+#properties-slider img {
     width: 100%;
     display: block;
 }
 
-#properties-slider .property-details{
+#properties-slider .property-details {
     padding: 1rem;
 }
 
-#properties-slider .price{
+#properties-slider .price {
     font-size: 1.2rem;
-    color: #314a40;
+    color: #343a40;
     font-weight: 800;
     margin: 0 0 0.5rem 0;
 }
 
-#properties-slider.property-details span{
+#properties-slider .property-details span {
     font-size: 0.8rem;
-    padding: 15px;
+    padding-right: 15px;
 }
 
 #properties-slider .property-details span.baths {
     padding-left: 10px;
 }
 
-#properties-slider .property-details span.sqft{
+#properties-slider .property-details span.sqft {
     padding-right: 0;
     padding-left: 10px;
 }
 
-#properties-slider .property-details span.bed,
-#properties-slider .property-details span.baths{
+#properties-slider .property-details span.beds,
+#properties-slider .property-details span.baths {
     border-right: 1px solid #888;
 }
 
-#properties-slider .property-details address{
+#properties-slider .property-details address {
     font-size: 0.8rem;
     font-style: normal;
     margin-top: 0.5rem;
@@ -319,13 +319,13 @@ header ul.is-sticky li a.active {
     margin: 2rem auto 0;
     width: 350px;
 }
-/* end properties styles*/
+/* end: properties styles */
 
-/*start agents style*/
-#agents{
-    margin: 0;
+/* start: agents styles */
+#agents {
+    margin: 4rem 0 6rem;
     padding: 0 0 6rem;
-    border-bottom: 1px solid #CCC;
+    border-bottom: 1px solid #ccc;
 }
 
 #agents p.large-paragraph {
@@ -333,7 +333,7 @@ header ul.is-sticky li a.active {
     margin-bottom: 4rem;
 }
 
-#agents .flex{
+#agents .flex {
     flex-wrap: wrap;
     padding: 0;
 }
@@ -357,10 +357,10 @@ header ul.is-sticky li a.active {
 #agents .card p {
     padding-left: 1rem;
 }
-/*end agents style*/
+/* end: agents styles */
 
-/*start: the best real estate company styles*/
-#the-best{
+/* start: best real estate company styles */
+#the-best {
     margin: 2rem 0;
 }
 
@@ -368,13 +368,62 @@ header ul.is-sticky li a.active {
     width: 47%;
 }
 
-#the-best .flex > div{
+#the-best .flex > div {
+    width: 40%;
+}
+
+#the-best ul {
     padding-left: 20px;
     margin-bottom: 4rem;
 }
 
-#the-best ul li{
+#the-best ul li {
     margin: 10px 0;
 }
-/*end: best real estate company style*/
+/* end: best real estate company styles */
 
+/* start: services styles */
+#services {
+    background: #f8f9fa;
+    padding: 6rem 0;
+    margin: 8rem 0;
+    border-bottom: 1px solid #dee2e6;
+}
+
+#services h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+#services .flex {
+    flex-wrap: wrap;
+}
+
+#services .flex > div {
+    width: 30%;
+    margin-bottom: 2rem;
+}
+
+#services .flex > div .fas {
+    color: #f69314;
+    font-size: 40px;
+    float: left;
+    margin-top: 15px;
+    width: 20%;
+    text-align: center;
+}
+
+#services .flex > div .services-card-right {
+    float: right;
+    width: 75%;
+}
+
+#services .flex > div a {
+    color: #f69314;
+    text-decoration: none;
+}
+
+#services .flex > div a:hover {
+    text-decoration: underline;
+}
+/* end: services styles */
