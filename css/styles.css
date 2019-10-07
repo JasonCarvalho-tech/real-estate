@@ -515,7 +515,7 @@ header ul.is-sticky li a.active {
     border-radius: 20px;
     padding: 10px;
     border: 1px solid #ced4da;
-    width: 100;
+    width: 100%;
     box-sizing: border-box;
     height: 43px;
     font-family: "Roboto", "Helvetica", "Sans-serif";
