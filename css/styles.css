@@ -433,48 +433,47 @@ header ul.is-sticky li a.active {
     margin-bottom: 8rem;
 }
 
-#testimonials h2{
+#testimonials h2 {
     text-align: center;
 }
 
-#testimonials-slider .slick-slide{
+#testimonials-slider .slick-slide {
     text-align: center;
 }
 
-#testimonials-slider blockquote{
+#testimonials-slider blockquote {
     font-size: 1.5rem;
     font-style: italic;
     margin: 1rem auto 3rem;
     max-width: 740px;
 }
 
-#testimonials-slider .testimonials-caption{
+#testimonials-slider .testimonials-caption {
     width: 200px;
     margin: 0 auto;
 }
 
-#testimonials-slider .testimonials-caption img{
+#testimonials-slider .testimonials-caption img {
     float: left;
     border-radius: 30px;
     width: 60px;
 }
 
-.testimonials-caption p{
+.testimonials-caption p {
     position: relative;
     top: 13px;
     font-size: 1.2rem;
 }
 
-.testimonials-slider .slick-arrow{
+#testimonials-slider .slick-arrow {
     text-decoration: none;
     position: absolute;
     font-size: 40px;
     color: #222;
-    top: 50px;
-    margin: -35px;
+    top: 50%;
+    margin-top: -35px;
 }
-
-#testimonials-slider .slick-next{
+#testimonials-slider .slick-next {
     right: 0;
 }
 /* end: testimonials styles*/
@@ -685,21 +684,22 @@ footer small {
 }
 /* end: footer styles */
 
-/* start media queries */
-@media (max-width: 901px) {
-    #logo{
+/* start: media queries */
+@media (max-width: 991px) {
+    #logo {
         top: 1px;
     }
 
-    #nav-toggle{
+    #nav-toggle {
         display: block;
     }
 
-    nav ul{
+    nav ul {
         position: fixed;
         background: #fff;
         right: -100%;
         top: 0;
+        margin: 0;
         padding: 2rem;
         height: 100%;
         width: 300px;
@@ -719,14 +719,14 @@ footer small {
         margin: 0;
     }
 
-    nav ul li{
+    nav ul li {
         display: block;
+        margin: 20px 0;
     }
 
     nav ul li:first-child {
         margin-top: 50px;
     }
-
     nav ul li a {
         font-size: 20px;
         color: #212529;
@@ -738,12 +738,12 @@ footer small {
     }
 }
 
-@media(max-width: 767 px) {
+@media (max-width: 767px) {
     h1 {
         font-size: 2rem;
     }
 
-    h2{
+    h2 {
         font-size: 1.75rem;
     }
 
@@ -751,15 +751,15 @@ footer small {
         font-size: 1.2rem;
     }
 
-    .large-paragraph{
+    .large-paragraph {
         font-size: 1rem;
     }
 
-    p{
+    p {
         font-size: 0.8rem;
     }
 
-    .container{
+    .container {
         max-width: 540px;
     }
 
@@ -768,7 +768,7 @@ footer small {
     }
 
     #agents .card {
-        width: 49%
+        width: 49%;
     }
 
     #the-best .flex > img {
@@ -780,7 +780,7 @@ footer small {
     }
 
     #testimonials-slider p {
-        font-size: 1.2 rem;
+        font-size: 1.2rem;
     }
 
     #properties .container:before {
@@ -832,12 +832,12 @@ footer small {
     }
 
     footer .footer-about p {
-        font-size: 3rem;
-        width: 100%
+        font-size: 1rem;
+        width: 100%;
     }
 
-    footerr .footer-subscribe input {
-        width: 90%
+    footer .footer-subscribe input {
+        width: 90%;
     }
 
     footer h5.follow-us {
@@ -846,15 +846,16 @@ footer small {
 }
 
 @media (max-width: 500px) {
-    #hero .hero-text{
-        width: 330px
+    #hero .hero-text {
+        width: 330px;
     }
 
     #agents {
         margin: 4rem 0 3rem;
+        padding: 0 0 3rem;
     }
 
-    #agents .card{
+    #agents .card {
         width: 100%;
     }
 
@@ -862,7 +863,7 @@ footer small {
         width: 100%;
     }
 
-    #how-it-works .flex{
+    #how-it-works .flex {
         display: block;
     }
 
@@ -875,7 +876,7 @@ footer small {
         width: 250px;
     }
 
-    #services{
+    #services {
         padding: 4rem 0 3rem;
         margin: 4rem 0;
     }
@@ -885,10 +886,10 @@ footer small {
     }
 
     #testimonials {
-        margin: 4rem;
+        margin-bottom: 4rem;
     }
 
-    #testimonials-slider p{
+    #testimonials-slider p {
         font-size: 1rem;
     }
 
@@ -912,4 +913,4 @@ footer small {
         padding: 4rem 0;
     }
 }
-/* end media queries */
+/* end: media queries */
