@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Caveat&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display|Roboto&display=swap');
 
 /* start: global styles */
@@ -106,13 +108,13 @@ header {
 }
 
 #logo {
-    font-family: "Roboto", "Helvetica", "Sans-serif";
-    font-size: 1.7rem;
+    font-family: 'Caveat', cursive;
+    font-size: 2.5rem;
     font-weight: 800;
     color: #fff;
     text-decoration: none;
     position: relative;
-    top: 4px;
+    top: 2px;
 }
 
 .hamburger-menu {
@@ -139,6 +141,7 @@ header ul {
 header ul li {
     display: inline-block;
     margin: 0 15px;
+    vertical-align: bottom;
 }
 
 #close-flyout {
@@ -687,6 +690,7 @@ footer small {
 /* start: media queries */
 @media (max-width: 991px) {
     #logo {
+        font-size: 2rem;
         top: 1px;
     }
 
@@ -739,6 +743,10 @@ footer small {
 }
 
 @media (max-width: 767px) {
+    #logo{
+        font-size: 1.7rem;
+    }
+
     h1 {
         font-size: 2rem;
     }
@@ -846,6 +854,10 @@ footer small {
 }
 
 @media (max-width: 500px) {
+    #logo{
+        font-size: 1.5rem;
+    }
+
     #hero .hero-text {
         width: 330px;
     }
