@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');/*not used yet*/
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap');/*for headings*/
 @import url('https://fonts.googleapis.com/css?family=Caveat&display=swap'); /*fot #logo*/
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display|Roboto&display=swap');
 
@@ -38,7 +39,7 @@ h1, h2, h3, h4, h5 {
 }
 
 h1, h2 {
-    font-family: "Playfair Display", serif;
+    font-family: 'Roboto Slab', serif;
     font-weight: 800;
 }
 
@@ -67,7 +68,7 @@ h4 {
 
 h5 {
     font-size: 1rem;
-    font-family: "Playfair Display", serif;
+    font-family: 'Roboto Slab', serif;
 }
 
 p {
@@ -99,9 +100,10 @@ p.large-paragraph {
 }
 
 header {
-    background: transparent;
-    padding: 1rem 0;
+    background: #fff;
+    padding: 0.25rem;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 -4px 10px 1px #999;
     position: fixed;
     width: 100%;
     z-index: 3;
@@ -111,7 +113,7 @@ header {
     font-family: 'Caveat', cursive;
     font-size: 2.5rem;
     font-weight: 800;
-    color: #fff;
+    color: #000;
     text-decoration: none;
     position: relative;
     top: 2px;
@@ -130,7 +132,7 @@ header {
 .hamburger-menu .strip {
     display: block;
     height: 1px;
-    background-color: #fff;
+    background-color: #000;
     margin: 4px 0;
 }
 
@@ -148,22 +150,13 @@ header ul li {
 }
 
 header ul li a {
-    color: #999;
+    color: #000;
     font-size: 16px;
     text-decoration: none;
 }
 
-header ul.is-sticky li a {
-    color: #000;
-}
-
 header ul li a:hover,
 header ul li a.active {
-    color: #fff;
-}
-
-header ul.is-sticky li a:hover,
-header ul.is-sticky li a.active {
     color: #f69314;
 }
 /* end: header styles */
@@ -351,7 +344,7 @@ header ul.is-sticky li a.active {
 }
 
 #agents .card h3 {
-    font-family: "Playfair Display", serif;
+    font-family: 'Roboto Slab', serif;
     color: #000;
 }
 
@@ -500,7 +493,7 @@ header ul.is-sticky li a.active {
 
 #form-container h3 {
     color: #000;
-    font-family: "Playfair Display", serif;
+    font-family: 'Roboto Slab', serif;
     margin-bottom: 2rem;
 }
 
@@ -695,6 +688,7 @@ footer small {
 
     #nav-toggle {
         display: block;
+        border-color: #fff;
     }
 
     nav ul {
