@@ -171,7 +171,7 @@ header ul.is-sticky li a.active {
 
 /* start: hero section styles */
 #hero {
-    background: url('https://onclickwebdesign.com/wp-content/uploads/hero_1.jpg') center center no-repeat;
+    background: url('../pics/HeroBackground.jpg') center center no-repeat;
     background-size: cover;
     position: absolute;
     top: 0;
@@ -191,22 +191,16 @@ header ul.is-sticky li a.active {
     z-index: 1;
 }
 
-#hero .hero-text {
+#hero .hero-slider {
     position: absolute;
-    top: 50%;
-    margin: -75px auto 0;
-    left: 0;
-    right: 0;
+    top: 20%;
+    left: 5%;
     z-index: 2;
-    color: #fff;
-    width: 500px;
-    text-align: center;
+    height: 200px;
 }
 
-#hero .hero-text p {
-    line-height: 1.5em;
-    font-weight: 300;
-    font-size: 1rem;
+#hero .hero-slider img{
+    height: inherit;
 }
 /* end: hero section styles */
 

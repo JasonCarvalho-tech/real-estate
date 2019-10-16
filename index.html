@@ -7,7 +7,7 @@
     <title>Holmes' Homes</title>
 
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-    <link href="css/styles.css" type="text/css" rel="Stylesheet" />
+    <link href="css/HomepageStyles.css" type="text/css" rel="Stylesheet" />
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/95dc93da07.js"></script>
@@ -38,12 +38,12 @@
         </header>
         
         <section id="hero">
-            <div class="fade"></div>
-            <div class="hero-text">
-                <h1>Buy and sell real estate properties</h1>
-                <p>Lorem ipsum dolor sit amet consectectur adipisicing elit. Laboriosam assumenda ea quo cupiditate facere deleniti fuga officia.</p>
-            </div>
-        </section>
+                <div class="fade"></div>
+                <div class="hero-text">
+                    <h1>Buy and sell real estate properties</h1>
+                    <p>Lorem ipsum dolor sit amet consectectur adipisicing elit. Laboriosam assumenda ea quo cupiditate facere deleniti fuga officia.</p>
+                </div>
+            </section>
     </div>
 
     <section id="how-it-works">
@@ -464,7 +464,7 @@
                    navToggle.find('.strip').css('background-color', '#fff');
                }
 
-               headerElem.css(scrollTop >= 200 ? {'padding': '0.25rem', 'box-shadow': '0 -4px 10px 1px #999'} : {'padding': '1rem 0', 'box-shadow': 'none' });
+               headerElem.css(scrollTop >= 5 ? {'padding': '0.25rem', 'box-shadow': '0 -4px 10px 1px #999'} : {'padding': '1rem 0', 'box-shadow': 'none' });
            });
 
            $(document).trigger('scroll');
