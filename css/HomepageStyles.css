@@ -191,17 +191,50 @@ header ul.is-sticky li a.active {
     z-index: 1;
 }
 
-#hero .hero-slider {
+#hero #hero-slider {
     position: absolute;
-    top: 20%;
-    left: 5%;
+    top: 30%;
+    right: 5%;
+    width: 90%;
     z-index: 2;
-    height: 200px;
+    color: #fff;
+    text-align: center;
 }
 
-#hero .hero-slider img{
-    height: inherit;
+#hero-slider a.slick-arrow {
+    color: #fff;
+    position: absolute;
+    top: -50px;
+    right: 0;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    text-decoration: none;
 }
+
+#hero-slider a.slick-prev {
+    right: 93%;
+}
+
+#hero-slider .slick-slide {
+    padding: 0 15px;
+}
+
+#hero-slider img {
+    width: 100%;
+    display: block;
+}
+
+#hero .hero-text {
+    position: absolute;
+    top: 100%;
+    margin: -75px auto 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    color: #fff;
+    text-align: center;
+}
+
 /* end: hero section styles */
 
 /* start: how it works styles */
@@ -682,7 +715,22 @@ footer small {
 /* end: footer styles */
 
 /* start: media queries */
+@media screen and (orientation:portrait) {
+    #hero .hero-text{
+        top: 75%;
+    }
+}
+
 @media (max-width: 991px) {
+
+    #hero-slider a.slick-prev {
+        right: 90%;
+    }
+
+    #hero .hero-text {
+        top: 75%;
+    }
+
     #logo {
         font-size: 2rem;
         top: 1px;
@@ -737,8 +785,21 @@ footer small {
 }
 
 @media (max-width: 767px) {
+
+    #hero-slider a.slick-prev {
+        right: 80%;
+    }
+
+    #hero .hero-text {
+        top: 75%;
+    }
+
     #logo{
         font-size: 1.7rem;
+    }
+
+    #hero-slider{
+        top: 60%;
     }
 
     h1 {
@@ -848,11 +909,17 @@ footer small {
 }
 
 @media (max-width: 500px) {
+
+    #hero-slider a.slick-prev {
+        right: 77%;
+    }
+
     #logo{
         font-size: 1.5rem;
     }
 
     #hero .hero-text {
+        top: 78%;
         width: 330px;
     }
 
@@ -917,6 +984,12 @@ footer small {
 
     footer {
         padding: 4rem 0;
+    }
+}
+
+@media (max-width: 374px){
+    #hero-slider a.slick-prev {
+        right: 70%;
     }
 }
 /* end: media queries */
