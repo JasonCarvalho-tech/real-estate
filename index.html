@@ -17,7 +17,7 @@
     <div id="header-hero-container">
         <header>
             <div class="flex container">
-                <a id="logo" href="#">Holmes Homes</a>
+                <a id="logo" href="#">Holmes' Homes</a>
                 <nav>
                     <button id="nav-toggle" class="hamburger-menu">
                         <span class="strip"></span>
@@ -29,8 +29,9 @@
                         <li><a href="#" class="active">Home</a></li>
                         <li><a href="#">Properties</a></li>
                         <li><a href="#">Agents</a></li>
-                        <li><a href="aboutUs.hmtl">About us</a></li>
-                        <li><a href="contact.html"">Contact Us</a></li>
+                        <li><a href="./aboutUs.html">About</a></li>
+                        <li><a href="#">News</a></li>
+                        <li><a href="#">Contact</a></li>
                         <li id="close-flyout"><span class="fas fa-times"></span></li>
                     </ul>
                 </nav>
@@ -38,13 +39,35 @@
         </header>
         
         <section id="hero">
-                <div class="fade"></div>
-                <div class="hero-text">
-                    <h1>Buy and sell real estate properties</h1>
-                    <p>Lorem ipsum dolor sit amet consectectur adipisicing elit. Laboriosam assumenda ea quo cupiditate facere deleniti fuga officia.</p>
+            <div class="fade"></div>
+            <div id="hero-slider" class="slick">
+                <div>
+                    <img src="./pics/property2.jpg" alt="Property 1" />
                 </div>
-            </section>
+
+                <div>
+                    <img src="./pics/property3.jpg" alt="Property 1" />
+                </div>
+
+                <div>
+                    <img src="./pics/property4.jpg" alt="Property 1" />
+                </div>
+
+                <div>
+                    <img src="./pics/property5.jpg" alt="Property 1" />
+                </div>
+
+                <div>
+                    <img src="./pics/property6.jpg" alt="Property 1" />
+                </div>
+            </div>
+
+            <div class="hero-text">
+                <h1>Could this be your future home?</h1>
+            </div>
+        </section>
     </div>
+
 
     <section id="how-it-works">
         <div class="container">
@@ -389,6 +412,42 @@
             let navMenu = $('#nav-menu');
             let navToggle = $('#nav-toggle');
 
+           $('#hero-slider').slick({
+                slidesToShow: 2,
+                centerMode: true,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 3000,
+                prevArrow: '<a href="#" class="slick-arrow slick-prev">previous</a>',
+                nextArrow: '<a href="#" class="slick-arrow slick-next">next</a>',
+                responsive: [
+                    {
+                        breakpoint: 1100,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 1,
+                            infinite: true,
+                        }
+                    },
+                    {
+                        breakpoint: 767,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1,
+                            infinite: true,
+                        }
+                    },
+                    {
+                        breakpoint: 530,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1,
+                            infinite: true,
+                        }
+                    }
+                ]
+           });
+
            $('#properties-slider').slick({
                 slidesToShow: 4,
                 slidesToScroll: 1,
@@ -421,6 +480,7 @@
                     }
                 ]
            });
+
 
            $('#testimonials-slider').slick({
                 infinite: true,
