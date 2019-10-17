@@ -258,7 +258,6 @@ header ul li a.active {
 /* end: properties styles */
 
 /* start: agents styles */
-
 #agents {
     border-bottom: 1px solid #ccc;
 }
@@ -657,7 +656,8 @@ footer small {
         width: 400px;
     }
 
-    #agents .card {
+    #agents .card,
+    #agents .end-card {
         width: 49%;
     }
 
