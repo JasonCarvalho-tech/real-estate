@@ -26,12 +26,11 @@
                     </button>
 
                     <ul id="nav-menu">
-                        <li><a href="#" class="active">Home</a></li>
-                        <li><a href="#">Properties</a></li>
-                        <li><a href="#">Agents</a></li>
+                        <li><a href="./index.html" class="active">Home</a></li>
+                        <li><a href="./properties.html">Properties</a></li>
+                        <li><a href="./agents">Agents</a></li>
                         <li><a href="./aboutUs.html">About</a></li>
-                        <li><a href="#">News</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="./contact.html">Contact</a></li>
                         <li id="close-flyout"><span class="fas fa-times"></span></li>
                     </ul>
                 </nav>
@@ -380,10 +379,11 @@
             <div class="footer-quick-links">
                 <h5>Quick Links</h5>
                 <ul>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Testimonials</a></li>
-                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="./index.html" >Home</a></li>
+                        <li><a href="./properties.html">Properties</a></li>
+                        <li><a href="./agents">Agents</a></li>
+                        <li><a href="./aboutUs.html">About</a></li>
+                        <li><a href="./contact.html">Contact</a></li>
                 </ul>
             </div>
 
@@ -499,13 +499,11 @@
            });
 
            $(document).on('click', (e) => {
-               let target = $(e.target);
-               if (target.closest('#nav-toggle').length > 0 || target.closest('#nav-menu').length > 0) {
-                   return false;
-               }
-
-               navMenu.css('right', '-100%');
-           });
+                let target = $(e.target);
+                if (!(target.closest('#nav-toggle').length > 0 || target.closest('#nav-menu').length > 0)) {
+                navMenu.css('right', '-100%');
+                }
+            });
 
            $(document).scroll(() => {
                let scrollTop = $(document).scrollTop();      

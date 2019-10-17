@@ -90,6 +90,18 @@ p.large-paragraph {
     font-size: 1.25rem;
     font-weight: 300;
 }
+
+#navbar-padding{
+    margin-top: 3rem;
+    padding: 3rem 0;
+}
+
+.internal-link{
+    text-decoration: none;
+    font-size: inherit;
+    color: #f69314;
+    font-family:'Roboto Slab', serif ;
+}
 /* end: global styles */
 
 /* start: header styles */
@@ -157,12 +169,231 @@ header ul li a.active {
 }
 /* end: header styles */
 
+/* start: properties styles */
+#properties {
+    margin: 4rem 0 8rem;
+    position: relative;
+}
+
+#properties h2 {
+    margin-bottom: 3rem;
+}
+
+#properties .container {
+    position: relative;
+}
+
+#properties .container:before {
+    content: "/";
+    position: absolute;
+    right: 80px;
+    top: 18px;
+    color: #999;
+}
+
+#properties-slider a.slick-arrow {
+    color: #000;
+    position: absolute;
+    top: -78px;
+    right: 0;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    text-decoration: none;
+}
+
+#properties-slider a.slick-prev {
+    right: 80px;
+}
+
+#properties-slider .slick-slide {
+    padding: 0 15px;
+}
+
+#properties-slider img {
+    width: 100%;
+    display: block;
+}
+
+#properties-slider .property-details {
+    padding: 1rem;
+}
+
+#properties-slider .price {
+    font-size: 1.2rem;
+    color: #343a40;
+    font-weight: 800;
+    margin: 0 0 0.5rem 0;
+}
+
+#properties-slider .property-details span {
+    font-size: 0.8rem;
+    padding-right: 15px;
+}
+
+#properties-slider .property-details span.baths {
+    padding-left: 10px;
+}
+
+#properties-slider .property-details span.sqft {
+    padding-right: 0;
+    padding-left: 10px;
+}
+
+#properties-slider .property-details span.beds,
+#properties-slider .property-details span.baths {
+    border-right: 1px solid #888;
+}
+
+#properties-slider .property-details address {
+    font-size: 0.8rem;
+    font-style: normal;
+    margin-top: 0.5rem;
+}
+
+#properties button.rounded {
+    display: block;
+    margin: 2rem auto 0;
+    width: 350px;
+}
+/* end: properties styles */
+
+/* start: agents styles */
+
+#agents {
+    border-bottom: 1px solid #ccc;
+}
+
+#agents p.large-paragraph {
+    width: 50%;
+    margin-bottom: 4rem;
+}
+
+#agents .flex {
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+#agents .card,
+#agents .end-card {
+    width: 32%;
+    background: #f0f0f0;
+    margin-bottom: 2rem;
+}
+
+#agents .card img,
+#agents .end-card img {
+    width: 100%;
+}
+
+#agents .card h3 
+#agents .end-card h3{
+    font-family: 'Roboto Slab', serif;
+    color: #000;
+}
+
+#agents .card h3,
+#agents .card p,
+#agents .end-card h3,
+#agents .end-card p {
+    padding-left: 1rem;
+}
+/* end: agents styles */
+
 /* start: about us page styles */
 #about-us{
     margin-top: 3rem;
     padding: 3rem 0;
 }
+
+.centered-image{
+    position: relative;
+    width: 80%;
+    left: 10%;
+}
 /* end: about us page styles */
+
+/*start contact us styles*/
+#contact{
+    background: #f8f9fa;
+    padding: 4rem 0 8rem;
+}
+
+#contact h2{
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+#form-container {
+    width: 50%;
+    background: #fff;
+    padding: 3rem;
+    box-sizing: border-box;
+}
+
+#form-container h3 {
+    color: #000;
+    font-family: 'Roboto Slab', serif;
+    margin-bottom: 2rem;
+}
+
+#form-container label {
+    display: block;
+    color: #000;
+    margin-top: 1rem;
+}
+
+#form-container input,
+#form-container textarea{
+    display: block;
+    border-radius: 20px;
+    padding: 10px;
+    border: 1px solid #ced4da;
+    width: 100%;
+    box-sizing: border-box;
+    height: 43px;
+    font-family: "Roboto", "Helvetica", "Sans-serif";
+    font-size: 1rem;
+    color: #495957;
+}
+
+#form-container textarea{
+    height: 170px;
+    margin-bottom: 2rem;
+    resize: none;
+}
+
+#address-container {
+    width: 38%;
+    background: #fff;
+    padding: 1.5rem;
+    box-sizing: border-box;
+    height: 300px;
+}
+
+#address-container label {
+    font-weight: 700;
+    display: block;
+    margin-top: 2rem;
+}
+
+#address-container label:first-child {
+    margin-top: 0;
+}
+
+#address-container address {
+    margin-bottom: 1.5rem;
+    font-style: normal;
+}
+
+#address-container a {
+    text-decoration: none;
+    color: #f69314;
+}
+
+#address-container a:hover {
+    text-decoration: underline;
+}
+/*end contact us styles*/
 
 /* start: testimonials styles*/
 #testimonials {
@@ -520,6 +751,10 @@ footer small {
 
     #agents .card {
         width: 100%;
+    }
+
+    #agents .end-card{
+        display: none;
     }
 
     #agents p.large-paragraph {
