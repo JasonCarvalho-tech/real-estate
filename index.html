@@ -411,6 +411,7 @@
             let logo = $('#logo');
             let navMenu = $('#nav-menu');
             let navToggle = $('#nav-toggle');
+            let heroText=$('#hero .hero-text')
 
            $('#hero-slider').slick({
                 slidesToShow: 2,
@@ -523,6 +524,7 @@
                }
 
                headerElem.css(scrollTop >= 5 ? {'padding': '0.25rem', 'box-shadow': '0 -4px 10px 1px #999'} : {'padding': '1rem 0', 'box-shadow': 'none' });
+               heroText.css(scrollTop >= 5 ? {'display': 'none'} : {'display': 'block'});
            });
 
            $(document).trigger('scroll');

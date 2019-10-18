@@ -225,6 +225,7 @@ header ul.is-sticky li a.active {
 }
 
 #hero .hero-text {
+    padding-bottom: 0.25rem;
     position: absolute;
     top: 100%;
     margin: -75px auto 0;
